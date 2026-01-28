@@ -6,6 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
+    /* RESET + MOBILE FIRST */
+    * {
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+    }
+
     body {
       margin: 0;
       padding: 0;
@@ -15,96 +21,48 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      min-height: 100vh;
+      min-height: 100svh; /* migliore su mobile */
     }
 
     .wrapper {
       width: 100%;
       max-width: 420px;
-      padding: 40px 20px;
+      padding: 32px 20px 40px;
       text-align: center;
     }
 
+    /* AVATAR */
     .avatar {
-      width: 110px;
-      height: 110px;
+      width: 96px;
+      height: 96px;
       border-radius: 50%;
       margin: 0 auto 20px;
-      background: #eee;
-      background-image: url("https://github.com/auroralira97official-dotcom/aurora-private/blob/main/ChatGPT%20Image%2027%20gen%202026%2C%2018_41_07.png");
+      background-color: #eee;
+      background-image: url("https://raw.githubusercontent.com/auroralira97official-dotcom/aurora-private/main/ChatGPT%20Image%2027%20gen%202026%2C%2018_41_07.png");
       background-size: cover;
       background-position: center;
     }
 
     h1 {
-      font-size: 28px;
+      font-size: 26px;
       font-weight: 500;
-      margin-bottom: 8px;
+      margin: 0 0 6px;
     }
 
     p {
       font-size: 15px;
+      line-height: 1.4;
       color: #666;
-      margin-bottom: 32px;
+      margin: 0 0 28px;
     }
 
+    /* LINK BUTTONS */
     .link {
       display: block;
       width: 100%;
-      padding: 16px;
+      padding: 18px;               /* più comodo al tocco */
       margin-bottom: 14px;
       border: 1px solid #111;
       text-decoration: none;
       color: #111;
-      font-size: 16px;
-      transition: all 0.25s ease;
-    }
-
-    .link:hover {
-      background: #111;
-      color: #fff;
-    }
-
-    .secondary {
-      border: none;
-      color: #777;
-      font-size: 14px;
-    }
-
-    .secondary:hover {
-      background: none;
-      color: #111;
-      text-decoration: underline;
-    }
-
-    footer {
-      margin-top: 30px;
-      font-size: 12px;
-      color: #aaa;
-    }
-  </style>
-</head>
-
-<body>
-  <div class="wrapper">
-
-    <!-- AVATAR (FACOLTATIVO) -->
-    <div class="avatar"></div>
-
-    <h1>Aurora Lira</h1>
-    <p>Some things are not public.</p>
-
-    <!-- MAIN PRIVATE LINK -->
-    <a class="link" href="https://www.fanvue.com/aurora.lira97">Private</a>
-
-    <!-- SOCIAL LINKS -->
-    <a class="link secondary" href="https://instagram.com/aurora.lira97">Instagram</a>
-    <a class="link secondary" href="https://tiktok.com/@aurora.lira97">TikTok</a>
-
-    <footer>
-      © Aurora
-    </footer>
-
-  </div>
-</body>
-</html>
+      f
